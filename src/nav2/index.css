@@ -1,0 +1,152 @@
+section{
+    height: 75px;
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Noto Naskh Arabic', serif;
+    position: relative;
+
+}
+
+section>.rast{
+    height: 100%;
+    /* background-color: green; */
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+.rast>ul>li>a{
+    color: rgb(94, 87, 87);
+}
+
+section>.chap{
+    height: 100%;
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+}
+
+.pro{
+    width: 160px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: rgb(86,196,95);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    cursor: pointer;
+    color: white;
+    /* margin-left: 13px; */
+}
+.pro>i{
+    font-size: 20px;
+}
+.search{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:rgb(204,205,209);
+    /* margin-left: 15px; */
+    cursor: pointer;
+}
+.search>i{
+    font-size: 18px;
+    padding-top: 7px;
+    padding-right: 3px;
+}
+
+.rast>.list1{
+    height: 100%;
+    /* background-color: pink; */
+}
+
+.rast>figure{
+    height: 100%;
+    background-color: blueviolet;
+}
+
+.rast>ul>li{
+    width: 110px;
+}
+
+.sub-ul{
+    position: absolute;
+    width:60%;
+    top: 76px;
+    left:20%;
+    background-color: white;
+    height: 200px;
+    border-top: 3px solid rgb(13, 13, 85);
+    display: none;
+    transition: 0.4s;
+    z-index: 9999999999999999;
+
+    
+   
+    /* background-size: contain; */
+}
+
+.ti>h5{
+    font-size: 13px;
+    display: flex;
+    justify-content: flex-end;
+    padding: 15px;
+    position: relative;
+    color: rgb(13, 13, 85);
+    cursor: pointer;
+    
+
+
+}
+
+.ti>h5:hover{
+    color: rgb(250, 118, 35);
+}
+.ti>h6{
+    font-size: 12px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 15px;
+    padding-top: 5px;
+    color: rgb(44, 44, 72);
+    cursor: pointer;
+}
+
+
+.ti>h5::after{
+    content: '';
+    height: 2px;
+    width: 60px;
+    /* display: flex; */
+    position: absolute;
+    right: 15px;
+    bottom: 0;
+    background-color: rgb(240, 226, 25);
+    z-index: 9999;
+    
+}
+
+
+
+.hov:hover>.sub-ul{
+    display: flex;
+}
+
+
+.eng{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+
+
+figure>img{
+    width: 100%;
+    height: 100%;
+    /* object-fit: cover; */
+    object-position: center;
+}
